@@ -62,7 +62,7 @@
 
       > .navbar-item {
         user-select: none;
-        color: white;
+        color: black;
         letter-spacing: 0.01em;
         background-color: transparent;
         border-top: 2px solid transparent;
@@ -79,12 +79,12 @@
         flex-shrink: 0;
 
         &:hover {
-          color: $color-blue-highlight;
+          color: $color-green-highlight;
         }
 
         &.is-active {
-          color: $color-blue-highlight !important;
-          border-bottom-color: $color-blue-highlight !important;
+          color: $color-green-highlight !important;
+          border-bottom-color: $color-green-highlight !important;
         }
 
         &:nth-child(2) {
@@ -108,7 +108,7 @@
           }
 
           &.is-active {
-            border-bottom-color: $color-blue-highlight !important;
+            border-bottom-color: $color-green-highlight !important;
           }
         }
       }

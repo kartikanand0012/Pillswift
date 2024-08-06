@@ -23,7 +23,7 @@ const BackToTopLink = styled.a<{ show: boolean }>`
   position: fixed;
   user-select: none;
   border-radius: 50%;
-  background: #61dafb;
+  background: #01754F;
   border: 1px solid transparent;
   -webkit-tap-highlight-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.265) 0px 0px 20px;

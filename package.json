@@ -7,6 +7,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "ajv": "^8.0.0",
+    "ajv-keywords": "^5.0.0",
     "bulma": "^0.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,7 +46,7 @@
     "react-snap": "^1.23.0",
     "sass": "^1.60.0",
     "sitemap-generator": "^8.5.1",
-    "typescript": "^5.0.2"
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
