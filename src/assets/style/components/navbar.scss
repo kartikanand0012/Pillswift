@@ -1,4 +1,4 @@
-﻿@use '../base/variables' as *;
+﻿@use "../base/variables" as *;
 
 .navbar {
   width: 100%;
@@ -62,7 +62,7 @@
 
       > .navbar-item {
         user-select: none;
-        color: black;
+        color: white;
         letter-spacing: 0.01em;
         background-color: transparent;
         border-top: 2px solid transparent;
@@ -93,8 +93,8 @@
 
         svg {
           font-size: 0.75em;
-          margin: .063rem 0 0 .55rem;
-          color: rgba(255,255,255,.5);
+          margin: 0.063rem 0 0 0.55rem;
+          color: rgba(255, 255, 255, 0.5);
           transition: color 0.2s ease-out;
         }
 

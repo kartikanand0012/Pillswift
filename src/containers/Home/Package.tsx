@@ -1,10 +1,10 @@
-import type { FunctionComponent } from 'react';
-import type { Package as PackageProps } from '../../config/packages.config';
+import type { FunctionComponent } from "react";
+import type { Package as PackageProps } from "../../config/packages.config";
 
 const Package: FunctionComponent<PackageProps> = ({
   package_name,
   description_1,
-  description_2
+  description_2,
 }) => (
   <div className="column">
     <p className="title">{package_name}</p>

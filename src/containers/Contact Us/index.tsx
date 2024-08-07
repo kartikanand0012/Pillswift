@@ -16,20 +16,20 @@ const LOREM_IPSUM_TEXT = `
 `;
 
 const ContactUs: FunctionComponent = () => (
-    <div className="view-wrapper">
-        <MetaInfo  {...getRouteMetaInfo('Contact Us')}/>
-        <section className="hero is-dark">
-            <div className="hero-body">
-                <div className="container has-text-centered">
-                    <div className="is-flex is-horizontal-center">
-                        <figure className="image is-132x132">
-                            <ReactIcon/>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-)
+  <div className="view-wrapper">
+    <MetaInfo {...getRouteMetaInfo("Contact Us")} />
+    <section className="hero is-dark">
+      <div className="hero-body">
+        <div className="container has-text-centered">
+          <div className="is-flex is-horizontal-center">
+            <figure className="image is-132x132">
+              <ReactIcon />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+);
 
-export default ContactUs;           
+export default ContactUs;

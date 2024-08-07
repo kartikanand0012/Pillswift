@@ -1,4 +1,4 @@
-﻿@use '../base/variables' as *;
+﻿@use "../base/variables" as *;
 
 .hero.is-dark {
   background-color: $color-hero-is-dark;
@@ -11,7 +11,7 @@
     }
 
     hr {
-      background-color: rgba(255,255,255,0.13);
+      background-color: rgba(255, 255, 255, 0.13);
       height: 1.5px;
       margin: 0 auto 1.55rem auto;
       width: 65%;
@@ -60,7 +60,7 @@
 
   hr {
     transition: background-color 0.2s ease-out;
-    background-color: hsla(0,100%,0%,.13);
+    background-color: hsla(0, 100%, 0%, 0.13);
     margin: 0.75rem 0;
     height: 1.5px;
   }
@@ -128,7 +128,7 @@
 }
 
 .image-card .action-button {
-  background-color: #01754F;
+  background-color: #01754f;
   color: #fff;
   border: none;
   padding: 12px 16px;
@@ -159,4 +159,48 @@
   .image-card {
     flex: 1 1 100%;
   }
+}
+
+.dashboard-container-bottom {
+  background-color: #01754f;
+  height: auto;
+}
+
+input {
+  display: inline-block;
+  width: 300px;
+  height: 44px;
+  margin: 0px 0px 0px 0;
+  padding: 10px 11px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #869ab8;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #dde1ed;
+  border-radius: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  outline: none;
+  box-sizing: border-box;
+
+  &.error {
+    border: 2px solid #fa5252;
+  }
+}
+button {
+  position: relative;
+  display: inline-block;
+  height: 44px;
+  padding: 10px;
+  letter-spacing: 0.025em;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  background-color: #001f14;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
 }

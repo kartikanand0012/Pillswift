@@ -5,11 +5,10 @@ import { routes } from "../config/routes.config";
 import pillSwiftIcon1 from "../assets/img/pillSwiftIcon1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 const Navbar: FunctionComponent = () => (
   <nav role="navigation" className="navbar" aria-label="Main navigation">
     <div className="navbar-wrapper">
-      <div className="brand-wrapper">   
+      <div className="brand-wrapper">
         <img
           src={pillSwiftIcon1}
           alt="PillSwift"
@@ -39,9 +38,9 @@ const Navbar: FunctionComponent = () => (
           aria-label="GitHub"
           className="navbar-item"
           rel="noopener noreferrer"
-          href="https://github.com/based-ghost"
+          href="https://github.com/kartikanand0012"
         >
-          <span>GitHub</span>
+          <span>Signup</span>
           <FontAwesomeIcon icon="external-link-alt" />
         </a>
         <div className="navbar-theme-toggle">

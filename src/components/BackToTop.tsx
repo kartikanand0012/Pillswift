@@ -7,7 +7,7 @@ const AngleDoubleUpIcon = styled(FontAwesomeIcon).attrs({
   icon: 'angle-double-up'
 })`
   display: block;
-  color: #20232a;
+  color: white;
   font-size: 1.5em;
   padding-left: 0.1rem;
   margin: 0.95rem auto auto;
@@ -69,7 +69,7 @@ const BackToTop: FunctionComponent = () => {
       aria-label="Back to top"
       onClick={scrollToTop}
     >
-      <AngleDoubleUpIcon />
+      <AngleDoubleUpIcon color='#fffff'/>
     </BackToTopLink>
   );
 };

@@ -1,14 +1,13 @@
-import image_card_1 from '../../assets/img/image_card_1.jpg'
-import image_card_2 from '../../assets/img/image_card_2.jpg'
-import image_card_3 from '../../assets/img/image_card_3.webp'
-import image_card_4 from '../../assets/img/image_card_4.avif'
-
+import image_card_1 from "../../assets/img/image_card_1.jpg";
+// import image_card_2 from "../../assets/img/image_card_2.jpg";
+// import image_card_3 from "../../assets/img/image_card_3.webp";
+// import image_card_4 from "../../assets/img/image_card_4.avif";
 
 interface ImageCardProps {
   imageSrc: string;
   description: string;
   buttonText: string;
-} 
+}
 
 export const imageCards: ImageCardProps[] = [
   {

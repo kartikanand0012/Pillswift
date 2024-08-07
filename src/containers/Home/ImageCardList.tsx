@@ -1,5 +1,5 @@
-import type { FunctionComponent } from 'react';
-import ImageCard from './ImageCard';
+import type { FunctionComponent } from "react";
+import ImageCard from "./ImageCard";
 
 interface ImageCardProps {
   imageSrc: string;
@@ -24,6 +24,4 @@ const ImageCardList: FunctionComponent<ImageCardListProps> = ({ cards }) => (
   </div>
 );
 
-  
-
-  export default ImageCardList;
+export default ImageCardList;

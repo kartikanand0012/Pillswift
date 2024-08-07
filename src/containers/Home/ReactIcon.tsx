@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styled, { keyframes } from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ROTATE_KEYFRAMES = keyframes`
   from {
@@ -10,7 +10,7 @@ const ROTATE_KEYFRAMES = keyframes`
 `;
 
 const ReactIcon = styled(FontAwesomeIcon).attrs({
-  icon: ['fab', 'react']
+  icon: ["fab", "react"],
 })`
   animation: ${ROTATE_KEYFRAMES} infinite 10s linear;
 

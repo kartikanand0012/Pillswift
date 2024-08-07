@@ -1,16 +1,13 @@
-import Alert from './Alert';
-import MetaInfo from './MetaInfo';
-import type { FunctionComponent } from 'react';
+import Alert from "./Alert";
+import MetaInfo from "./MetaInfo";
+import type { FunctionComponent } from "react";
 
-const NOT_FOUND_TITLE = '404: Not Found';
-const NOT_FOUND_DESCRIPTION = 'The requested page could not be found.';
+const NOT_FOUND_TITLE = "404: Not Found";
+const NOT_FOUND_DESCRIPTION = "The requested page could not be found.";
 
 const NotFound404: FunctionComponent = () => (
   <div className="container view-wrapper">
-    <MetaInfo
-      title={NOT_FOUND_TITLE}
-      description={NOT_FOUND_DESCRIPTION}
-    />
+    <MetaInfo title={NOT_FOUND_TITLE} description={NOT_FOUND_DESCRIPTION} />
     <Alert
       title={NOT_FOUND_TITLE}
       subTitle={NOT_FOUND_DESCRIPTION}

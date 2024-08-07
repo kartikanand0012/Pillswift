@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { useState, useRef, type FunctionComponent } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallbackRef, useUpdateEffect, useOnClickOutside } from '../hooks';
+import styled from "styled-components";
+import { useState, useRef, type FunctionComponent } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useCallbackRef, useUpdateEffect, useOnClickOutside } from "../hooks";
 
 type ToggleThemeProps = Readonly<{
   onToggle?: (checked: boolean) => any;
@@ -12,13 +12,13 @@ type ToggleControlProps = Readonly<{
   checked: boolean;
 }>;
 
-const ICON_COLOR = '#fac863';
-const ACCENT_COLOR = '#61dafb';
-const PRIMARY_COLOR = '#4d4d4d';
-const TOGGLE_CTRL_COLOR = '#fafafa';
+const ICON_COLOR = "#fac863";
+const ACCENT_COLOR = "#61dafb";
+const PRIMARY_COLOR = "#4d4d4d";
+const TOGGLE_CTRL_COLOR = "#fafafa";
 
 const onToggleDefault = (checked: boolean) => {
-  const theme = checked ? 'secondary' : 'primary';
+  const theme = checked ? "secondary" : "primary";
   document.body.className = `${theme}-theme`;
 };
 
@@ -57,7 +57,7 @@ const ToggleThemeIcon = styled(FontAwesomeIcon)`
     height: 1.05rem;
     font-size: 1.05rem;
     color: ${ICON_COLOR};
-    vertical-align: -.165rem;
+    vertical-align: -0.165rem;
   }
 `;
 
@@ -75,9 +75,11 @@ const ToggleControl = styled.div<ToggleControlProps>`
     box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1),
     border 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 
-  transform: translateX(${({ checked }) => checked ? 2.5 : 31}px);
-  border: 0.5px solid ${({ focused }) => focused ? ACCENT_COLOR : PRIMARY_COLOR};
-  box-shadow: ${({ focused }) => focused ? `0 0 2.75px 1.75px ${ACCENT_COLOR}` : 'none'};
+  transform: translateX(${({ checked }) => (checked ? 2.5 : 31)}px);
+  border: 0.5px solid
+    ${({ focused }) => (focused ? ACCENT_COLOR : PRIMARY_COLOR)};
+  box-shadow: ${({ focused }) =>
+    focused ? `0 0 2.75px 1.75px ${ACCENT_COLOR}` : "none"};
 `;
 
 const ToggleTheme: FunctionComponent<ToggleThemeProps> = ({ onToggle }) => {
@@ -99,10 +101,7 @@ const ToggleTheme: FunctionComponent<ToggleThemeProps> = ({ onToggle }) => {
   };
 
   return (
-    <ToggleContainer
-      ref={parentElRef}
-      onClick={toggleTheme}
-    >
+    <ToggleContainer ref={parentElRef} onClick={toggleTheme}>
       <ToggleTrack>
         <div>
           <ToggleThemeIcon icon="sun" />
@@ -111,10 +110,7 @@ const ToggleTheme: FunctionComponent<ToggleThemeProps> = ({ onToggle }) => {
           <ToggleThemeIcon icon="moon" />
         </div>
       </ToggleTrack>
-      <ToggleControl
-        checked={checked}
-        focused={focused}
-      />
+      <ToggleControl checked={checked} focused={focused} />
     </ToggleContainer>
   );
 };

@@ -1,4 +1,4 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faSun,
   faMoon,
@@ -7,13 +7,13 @@ import {
   faAngleDoubleUp,
   faExternalLinkAlt,
   faExclamationCircle,
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faEtsy,
   faReact,
   faGithub,
   faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
 export const registerIcons = () => {
   library.add(

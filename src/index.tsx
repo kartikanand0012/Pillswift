@@ -1,12 +1,12 @@
-import { StrictMode } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
-import { hydrateRoot, createRoot } from 'react-dom/client';
-import App from './App';
-import './assets/style/main.scss';
-import reportWebVitals from './reportWebVitals';
-import { registerIcons } from './config/fa.config';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import { StrictMode } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import { hydrateRoot, createRoot } from "react-dom/client";
+import App from "./App";
+import "./assets/style/main.scss";
+import reportWebVitals from "./reportWebVitals";
+import { registerIcons } from "./config/fa.config";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 registerIcons();
 
@@ -20,7 +20,7 @@ const appElement = (
   </BrowserRouter>
 );
 
-const container = document.getElementById('root') as HTMLElement;
+const container = document.getElementById("root") as HTMLElement;
 const hasChildNodes = container?.hasChildNodes() ?? false;
 
 hasChildNodes
