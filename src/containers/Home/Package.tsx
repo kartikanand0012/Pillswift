@@ -9,7 +9,7 @@ const Package: FunctionComponent<PackageProps> = ({
   <div className="column">
     <p className="title">{package_name}</p>
     <div className="content">
-      <div>
+      <div style={{textAlign:'center'}}>
         <code>{package_name}</code> {description_1}
       </div>
       <p>{description_2}</p>

@@ -5,6 +5,7 @@ import DeliveryShippingPolicy from "../containers/Policy/DeliveryShippingPolicy"
 import PrivacyPolicy from "../containers/Policy/PrivacyPolicy";
 import ReturnRefundCancellationPolicy from "../containers/Policy/ReturnRefundCancellationPolicy";
 import TersmAndConditions from "../containers/Policy/TermsAndConditions";
+import GetInTouch from "../components/GetInTouch";
 
 const DESC_SUFFIX = "description - length <= 160 chars.";
 
@@ -83,7 +84,7 @@ export const routes: Route[] = [
   {
     path: "/contact-us",
     name: "Contact Us",
-    Component: ContactUs,
+    Component: GetInTouch,
     metaInfo: {
       title: "Contact us",
       description: `Contact Us ${DESC_SUFFIX}`,

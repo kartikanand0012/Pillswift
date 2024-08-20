@@ -90,7 +90,7 @@ const Home: FunctionComponent = () => {
         <div className="columns">
           <div className="column">
             <p className="title">lorem ipsum</p>
-            <div className="content">{LOREM_IPSUM_TEXT}</div>
+            <div className="content" style={{textAlign:'center'}}>{LOREM_IPSUM_TEXT}</div>
           </div>
         </div>
       </section>
