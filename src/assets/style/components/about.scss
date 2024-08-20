@@ -1,0 +1,71 @@
+
+
+//Image Card CSS
+
+.image-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  max-width: 310px;
+  width: 100%;
+  flex: 1 1 calc(33.333% - 32px);
+}
+
+.image-card .image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.image-card .content {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.image-card .action-button {
+  background-color: #01754f;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card .action-button:hover {
+  background-color: #001f14;
+}
+
+.image-card .arrow {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .image-card {
+    flex: 1 1 calc(50% - 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-card {
+    flex: 1 1 100%;
+  }
+}

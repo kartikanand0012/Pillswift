@@ -1,10 +1,8 @@
 import type { FunctionComponent } from "react";
-import ImageCardButton from "./ImageCardButton";
+import ImageCard from "./ImageCard";
 
 interface ImageCardProps {
   imageSrc: string;
-  description: string;
-  buttonText: string;
 }
 
 interface ImageCardListProps {
@@ -12,13 +10,11 @@ interface ImageCardListProps {
 }
 
 const ImageCardList: FunctionComponent<ImageCardListProps> = ({ cards }) => (
-  <div className="image-card-list">
+  <div className="image-card-list-no-button">
     {cards.map((card, index) => (
-      <ImageCardButton
+      <ImageCard
         key={index}
         imageSrc={card.imageSrc}
-        description={card.description}
-        buttonText={card.buttonText}
       />
     ))}
   </div>

@@ -1,7 +1,7 @@
 import ToggleTheme from "./ToggleTheme";
 import { NavLink } from "react-router-dom";
 import type { FunctionComponent } from "react";
-import { routes } from "../config/routes.config";
+import { navRoutes } from "../config/routes.config";
 import pillSwiftIcon1 from "../assets/img/pillSwiftIcon1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -20,7 +20,7 @@ const Navbar: FunctionComponent = () => (
         />
       </div>
       <div className="navbar-routes">
-        {routes.map(({ path, name }) => (
+        {navRoutes.map(({ path, name }) => (
           <NavLink
             end
             to={path}

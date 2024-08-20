@@ -5,7 +5,7 @@ interface ImageCardProps {
   buttonText: string;
 }
 
-const ImageCard: FunctionComponent<ImageCardProps> = ({
+const ImageCardButton: FunctionComponent<ImageCardProps> = ({
   imageSrc,
   description,
   buttonText,
@@ -21,4 +21,4 @@ const ImageCard: FunctionComponent<ImageCardProps> = ({
   </div>
 );
 
-export default ImageCard;
+export default ImageCardButton;

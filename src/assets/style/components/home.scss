@@ -102,6 +102,29 @@
   align-items: center;
 }
 
+.image-card-list-no-button{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.image-card-no-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  max-width: 310px;
+  width: 100%;
+  flex: 1 1 calc(33.333% - 32px);
+}
+
+
 .image-card {
   display: flex;
   flex-direction: column;

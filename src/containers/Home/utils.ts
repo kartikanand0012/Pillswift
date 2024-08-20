@@ -8,6 +8,9 @@ interface ImageCardProps {
   description: string;
   buttonText: string;
 }
+interface ImageCardAboutProps {
+  imageSrc: string;
+}
 
 export const imageCards: ImageCardProps[] = [
   {
@@ -30,6 +33,18 @@ export const imageCards: ImageCardProps[] = [
     imageSrc: image_card_1,
     description: "Curabitur tincidunt mollis ante non volutpat.",
     buttonText: "Find Out More",
+  },
+];
+
+export const imageCardsAbout: ImageCardAboutProps[] = [
+  {
+    imageSrc: image_card_1,
+  },
+  {
+    imageSrc: image_card_1,
+  },
+  {
+    imageSrc: image_card_1,
   },
 ];
 

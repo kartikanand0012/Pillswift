@@ -1,0 +1,219 @@
+.about-page__background {
+    background-image: url("../../assets/img/aboutUsBg.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .about-page__background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .about-page__content {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 23%;
+    z-index: 2; /* Ensure content is above the overlay */
+  }
+  
+  .about-page__title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .about-page__subtitle {
+    font-size: 1.5rem;
+  }
+
+/* Our People */
+
+.our-people {
+  text-align: left;
+  padding: 50px 20px;
+}
+
+.our-people__title {
+  font-size: 2rem;
+  color: #B32D2E;
+  margin-bottom: 40px;
+}
+
+.our-people__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.our-people__card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.our-people__card:hover {
+  transform: translateY(-5px);
+}
+
+.our-people__card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0 10px;
+}
+
+.our-people__card-text {
+  color: #555;
+}
+
+.icon-heart, .icon-security, .icon-safety, .icon-family, .icon-innovation, .icon-teamwork, .icon-freedom, .icon-empower, .icon-leadership {
+  font-size: 2rem;
+  color: #01754f;
+}
+
+@media (max-width: 600px) {
+  .our-people__title {
+    font-size: 1.5rem;
+  }
+
+  .our-people__card-title {
+    font-size: 1rem;
+  }
+
+  .our-people__card-text {
+    font-size: 0.875rem;
+  }
+}
+
+
+/* Card Group */
+.card-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #01754f;
+  height: 40vh;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 20px; /* Increased space between lines */
+  font-size: 1em;
+  color: #555;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.card li strong {
+  color: #01754f;
+}
+
+/* Divider line */
+.card li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0; /* Gray divider color */
+}
+
+.card li:last-child::after {
+  display: none; /* Remove divider after the last item */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-group {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+}
+
+
+
+/* Our Clients */
+
+.our-clients-container {
+  background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.client-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.client-item:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+}

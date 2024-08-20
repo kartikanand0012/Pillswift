@@ -7,15 +7,33 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-import pillSwiftIcon1 from '../assets/img/pillSwiftIcon1.png'
+import pillSwiftIcon1 from "../assets/img/pillSwiftIcon1.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const companyLinks = [
     { label: "About Us", icon: FaRegArrowAltCircleRight, Link: "about" },
     { label: "Contact Us", icon: FaRegArrowAltCircleRight, Link: "contact" },
-    { label: "Reservation", icon: FaRegArrowAltCircleRight, Link: "contact" },
-    { label: "Privacy Policy", icon: FaRegArrowAltCircleRight, Link: "" },
-    { label: "Terms & Condition", icon: FaRegArrowAltCircleRight, Link: "" },
+    {
+      label: "Delivery | Shipping Policy",
+      icon: FaRegArrowAltCircleRight,
+      Link: "delivery-shipping-policy",
+    },
+    {
+      label: "Privacy Policy",
+      icon: FaRegArrowAltCircleRight,
+      Link: "privacy-policy",
+    },
+    {
+      label: "Return | Refund",
+      icon: FaRegArrowAltCircleRight,
+      Link: "return-refund-cancellation-policy",
+    },
+    {
+      label: "Terms & Condition",
+      icon: FaRegArrowAltCircleRight,
+      Link: "terms-and-conditions",
+    },
   ];
 
   const contactInfo = [
@@ -46,58 +64,58 @@ const Footer = () => {
         <div className="container pt-5">
           <div className="is-flex is-space-between">
             <div className="is-flex">
-            <div className="column mr-5">
-              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Company
-              </h4>
-              {companyLinks.map((link, index) => (
-                <a
-                  key={index}
-                  className="btn btn-link is-flex is-start"
-                  href={link.Link}
-                >
-                  {React.createElement(link.icon, { className: "mr-2" })}
-                  {link.label}
-                </a>
-              ))}
-            </div>
-            <div className="column mr-5">
-              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Contact
-              </h4>
-              {contactInfo.map((info, index) => (
-                <p key={index} className="mb-2">
-                  <i className={`fa ${info.icon} me-3`} />
-                  {info.text}
-                </p>
-              ))}
-              <div className="is-flex pt-2">
-                {socialLinks.map((social, index) => (
-                  <a
+              <div className="column mr-5">
+                <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                  Company
+                </h4>
+                {companyLinks.map((link, index) => (
+                  <Link
                     key={index}
-                    className="btn btn-outline-light btn-social"
-                    href=""
+                    className="btn btn-link is-flex is-start"
+                    to={`/${link.Link}`} // Adjusting this for proper routing
                   >
-                    {React.createElement(social.icon, {
-                      className: "display-1",
-                      //@ts-ignore
-                      style: { scale: social.scale, size: social.size },
-                    })}
-                  </a>
+                    {React.createElement(link.icon, { className: "mr-2" })}
+                    {link.label}
+                  </Link>
                 ))}
               </div>
-            </div>
-            <div className="column mr-5">
-              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Opening
-              </h4>
-              {openingHours.map((hours, index) => (
-                <React.Fragment key={index}>
-                  <h5 className="text-light fw-normal">{hours.day}</h5>
-                  <p>{hours.time}</p>
-                </React.Fragment>
-              ))}
-            </div>
+              <div className="column mr-5">
+                <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                  Contact Us
+                </h4>
+                {contactInfo.map((info, index) => (
+                  <p key={index} className="mb-2">
+                    <i className={`fa ${info.icon} me-3`} />
+                    {info.text}
+                  </p>
+                ))}
+                <div className="is-flex pt-2">
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={index}
+                      className="btn btn-outline-light btn-social"
+                      href=""
+                    >
+                      {React.createElement(social.icon, {
+                        className: "display-1",
+                        //@ts-ignore
+                        style: { scale: social.scale, size: social.size },
+                      })}
+                    </a>
+                  ))}
+                </div>
+              </div>
+              <div className="column mr-5">
+                <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                  Opening
+                </h4>
+                {openingHours.map((hours, index) => (
+                  <React.Fragment key={index}>
+                    <h5 className="text-light fw-normal">{hours.day}</h5>
+                    <p>{hours.time}</p>
+                  </React.Fragment>
+                ))}
+              </div>
             </div>
             <div className="column">
               <img src={pillSwiftIcon1} alt="" />
@@ -108,11 +126,11 @@ const Footer = () => {
           <div className="copyright pt-4 mb-2">
             <div className="is-flex is-space-between">
               <div className="text-center text-md-start mb-md-0">
-              {`© ${new Date().getFullYear()} Pillswift Holdings | All rights Reserved | Privacy Policy`}
+                {`© ${new Date().getFullYear()} Pillswift Holdings | All rights Reserved | Privacy Policy`}
               </div>
               <div className="text-center text-md-end">
                 <div className="footer-menu">
-                  <a href="">Home</a>
+                  <a href="/home">Home</a>
                   <a href="">Cookies</a>
                   <a href="">Help</a>
                   <a href="">FQAs</a>
