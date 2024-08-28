@@ -3,9 +3,9 @@ import "./GetInTouch.css";
 import location from "../assets/img/location.png";
 
 const socialLinks = [
-  { icon: require("react-icons/fa").FaLinkedin, href: "#", scale: "1.5" },
+  { icon: require("react-icons/fa").FaLinkedin, href: "https://www.linkedin.com/company/pillswift/", scale: "1.5" },
   { icon: require("react-icons/fa").FaTwitter, href: "#", scale: "1.5" },
-  { icon: require("react-icons/fa").FaInstagram, href: "#", scale: "1.5" },
+  { icon: require("react-icons/fa").FaInstagram, href: "https://www.instagram.com/pillswift.in?utm_source=qr&igsh=ZGpuazNqMnZpamRx  ", scale: "1.5" },
 ];
 const GetInTouch = () => {
   const handleClick = () => {

@@ -5,6 +5,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaYoutube,
+  FaInstagram,
 } from "react-icons/fa";
 
 import pillSwiftIcon1 from "../assets/img/pillSwiftIcon1.png";
@@ -47,10 +48,18 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaTwitter, scale: 1.3 },
-    { icon: FaFacebookF, scale: 1.3 },
-    { icon: FaYoutube, size: 40, scale: 1.3 },
-    { icon: FaLinkedin, scale: 1.3 },
+    // { icon: FaTwitter, scale: 1.3 , link: "#"},
+    {
+      icon: FaInstagram,
+      scale: 1.3,
+      link: "https://www.instagram.com/pillswift.in?utm_source=qr&igsh=ZGpuazNqMnZpamRx",
+    },
+    // { icon: FaYoutube, size: 40, scale: 1.3, link: "#" },
+    {
+      icon: FaLinkedin,
+      scale: 1.3,
+      link: "https://www.linkedin.com/company/pillswift/",
+    },
   ];
 
   const openingHours = [
@@ -94,7 +103,7 @@ const Footer = () => {
                     <a
                       key={index}
                       className="btn btn-outline-light btn-social"
-                      href=""
+                      href={social.link}
                     >
                       {React.createElement(social.icon, {
                         className: "display-1",
