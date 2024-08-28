@@ -38,7 +38,7 @@
 
   .title {
     color: #fff;
-    font-size: 2.8em;
+    font-size: 3em;
     margin: auto auto 1.25rem;
     font-family: Segoe Script;
 
@@ -102,7 +102,7 @@
   align-items: center;
 }
 
-.image-card-list-no-button{
+.image-card-list-no-button {
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
@@ -123,7 +123,6 @@
   width: 100%;
   flex: 1 1 calc(33.333% - 32px);
 }
-
 
 .image-card {
   display: flex;
@@ -226,4 +225,20 @@ button {
   box-sizing: border-box;
   outline: none;
   cursor: pointer;
+}
+
+.home_image_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home_image_container_two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.home_image {
+  width: 40%;
+  margin:2%
 }

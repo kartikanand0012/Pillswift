@@ -1,7 +1,17 @@
-import image_card_1 from "../../assets/img/image_card_1.jpg";
-// import image_card_2 from "../../assets/img/image_card_2.jpg";
-// import image_card_3 from "../../assets/img/image_card_3.webp";
-// import image_card_4 from "../../assets/img/image_card_4.avif";
+import cards1 from "../../assets/img/cards1.jpg";
+import cards2 from "../../assets/img/cards2.jpg";
+import cards3 from "../../assets/img/cards3.jpg";
+import pillswiftImages1 from "../../assets/img/pillswiftImages1.jpg";
+import pillswiftImages2 from "../../assets/img/pillswiftImages2.jpg";
+import pillswiftImages3 from "../../assets/img/pillswiftImages3.jpg";
+import pillswiftImages4 from "../../assets/img/pillswiftImages4.jpg";
+import pillswiftImages5 from "../../assets/img/pillswiftImages5.jpg";
+import pillswiftImages6 from "../../assets/img/pillswiftImages6.jpg";
+import pillswiftImages7 from "../../assets/img/pillswiftImages7.jpg";
+
+
+import image_card_1 from "../../assets/img/cards4.jpg";
+
 
 interface ImageCardProps {
   imageSrc: string;
@@ -14,23 +24,23 @@ interface ImageCardAboutProps {
 
 export const imageCards: ImageCardProps[] = [
   {
-    imageSrc: image_card_1,
+    imageSrc: pillswiftImages1,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     buttonText: "Learn More",
   },
   {
-    imageSrc: image_card_1,
+    imageSrc: pillswiftImages5,
     description:
       "Proin ac ultricies metus. Donec placerat purus at eros varius.",
     buttonText: "Discover",
   },
   {
-    imageSrc: image_card_1,
+    imageSrc: pillswiftImages3,
     description: "Vivamus lacinia odio vitae vestibulum vestibulum.",
     buttonText: "Explore",
   },
   {
-    imageSrc: image_card_1,
+    imageSrc: pillswiftImages4,
     description: "Curabitur tincidunt mollis ante non volutpat.",
     buttonText: "Find Out More",
   },
@@ -38,13 +48,13 @@ export const imageCards: ImageCardProps[] = [
 
 export const imageCardsAbout: ImageCardAboutProps[] = [
   {
-    imageSrc: image_card_1,
+    imageSrc: pillswiftImages7,
   },
   {
-    imageSrc: image_card_1,
+    imageSrc: pillswiftImages6,
   },
   {
-    imageSrc: image_card_1,
+    imageSrc: pillswiftImages2,
   },
 ];
 

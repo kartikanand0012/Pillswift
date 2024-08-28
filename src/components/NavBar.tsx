@@ -33,7 +33,7 @@ const Navbar: FunctionComponent = () => (
           </NavLink>
         ))}
         <div className="seperator" />
-        <a
+        {/* <a
           target="_blank"
           aria-label="GitHub"
           className="navbar-item"
@@ -42,7 +42,7 @@ const Navbar: FunctionComponent = () => (
         >
           <span>Signup</span>
           <FontAwesomeIcon icon="external-link-alt" />
-        </a>
+        </a> */}
         <div className="navbar-theme-toggle">
           <ToggleTheme />
         </div>

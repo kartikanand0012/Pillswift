@@ -11,7 +11,9 @@ const ImageCardButton: FunctionComponent<ImageCardProps> = ({
   buttonText,
 }) => (
   <div className="image-card">
-    <img src={imageSrc} alt="Card Image" className="image" />
+    <div className="image-container">
+      <img src={imageSrc} alt="Card Image" className="image" />
+    </div>
     <div className="content">
       <p>{description}</p>
       <button className="action-button">

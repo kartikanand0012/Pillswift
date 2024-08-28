@@ -1,5 +1,6 @@
 import React from "react";
 import "./GetInTouch.css";
+import location from "../assets/img/location.png";
 
 const socialLinks = [
   { icon: require("react-icons/fa").FaLinkedin, href: "#", scale: "1.5" },
@@ -7,6 +8,10 @@ const socialLinks = [
   { icon: require("react-icons/fa").FaInstagram, href: "#", scale: "1.5" },
 ];
 const GetInTouch = () => {
+  const handleClick = () => {
+    const url = "https://maps.app.goo.gl/a28ceT7aAUpwFki2A";
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="get-in-touch">
       <div className="background-image">
@@ -60,7 +65,7 @@ const GetInTouch = () => {
               </form>
             </div>
             <div className="map-card">
-              <img src="green-world-map.png" alt="World Map" />
+              <img onClick={handleClick} src={location} alt="World Map" />
               <p>Our Office Locations</p>
             </div>
           </div>
