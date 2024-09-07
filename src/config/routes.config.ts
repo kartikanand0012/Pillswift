@@ -37,15 +37,15 @@ export const routes: Route[] = [
       description: `Home ${DESC_SUFFIX}`,
     },
   },
-  {
-    path: "/about",
-    name: "About Us",
-    Component: About,
-    metaInfo: {
-      title: "About",
-      description: `About ${DESC_SUFFIX}`,
-    },
-  },
+  // {
+  //   path: "/about",
+  //   name: "About Us",
+  //   Component: About,
+  //   metaInfo: {
+  //     title: "About",
+  //     description: `About ${DESC_SUFFIX}`,
+  //   },
+  // },
   {
     path: "/delivery-shipping-policy",
     name: "Delivery | Shipping Policy",
@@ -102,15 +102,15 @@ export const navRoutes: Route[] = [
       description: `Home ${DESC_SUFFIX}`,
     },
   },
-  {
-    path: "/about",
-    name: "About Us",
-    Component: About,
-    metaInfo: {
-      title: "About",
-      description: `About ${DESC_SUFFIX}`,
-    },
-  },
+  // {
+  //   path: "/about",
+  //   name: "About Us",
+  //   Component: About,
+  //   metaInfo: {
+  //     title: "About",
+  //     description: `About ${DESC_SUFFIX}`,
+  //   },
+  // },
   {
     path: "/contact-us",
     name: "Contact Us",

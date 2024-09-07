@@ -21,7 +21,7 @@ const GetInTouch = () => {
             <div className="header-center">
               <h2 className="header-center">Email Us</h2>
 
-              <span style={{ fontSize: "20px" }}>contact@pillswift.in</span>
+              <span style={{ fontSize: "20px" }}>connect@pillswift.in</span>
             </div>
             <div className="header-right">
               <p>Follow us:</p>

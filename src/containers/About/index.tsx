@@ -49,7 +49,7 @@ const About: FunctionComponent = () => {
       <MetaInfo {...getRouteMetaInfo("About")} />
       <div className="about-page__background">
         <div className="about-page__content">
-          <h1 className="about-page__title">Committed to India</h1>
+          <h1 className="about-page__title">Improving Healthcare Decisions - Leveraging data and technology for improved quality of life</h1>
           <p className="about-page__subtitle">
             Building World-class organizations for the future.
           </p>

@@ -8,9 +8,9 @@ import { Packages } from "../../config/packages.config";
 import { getRouteMetaInfo } from "../../config/routes.config";
 import home_container from "../../assets/img/home_container.jpg";
 import home_bottom from "../../assets/img/home_bottom.jpg";
-import banner1 from "../../assets/img/banner1.jpg";
-import banner2 from "../../assets/img/banner2.jpg";
-import banner3 from "../../assets/img/banner3.png";
+import banner1 from "../../assets/img/Home/banner1.jpg";
+import banner2 from "../../assets/img/Home/banner2.jpg";
+import banner3 from "../../assets/img/Home/banner3.jpg";
 
 import ImageCardList from "./ImageCardList";
 import { imageCards, LOREM_IPSUM_TEXT } from "./utils";
@@ -149,22 +149,22 @@ const Home: FunctionComponent = () => {
           <ImageCardList cards={imageCards.slice(0, 5)} />
         </div>
       </section>
-      <section className="container dashboard-content" style={{display:'flex', flexDirection:'column', width:'28%'}}>
+      {/* <section className="container dashboard-content" style={{display:'flex', flexDirection:'column', width:'28%'}}>
         <div className="columns">
           <div className="column">
             <p className="title">START YOUR JOURNEY WITH PILLSWIFT</p>
           </div>
-          {/* <div className="columns">
+          <div className="columns">
           {Packages.map((pkg, idx) => (
             <Package key={idx} {...pkg} />
             ))}
-            </div> */}
+            </div>
         </div>
         <button className="action-button" style={{backgroundColor: "#01754f"}}>
           Join Us! <span className="arrow">→</span>
         </button>
         <hr />
-      </section>
+      </section> */}
       <section className="dashboard-container-bottom">
         <section className="container">
           <div className="column is-flex is-space-between">

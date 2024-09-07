@@ -1,5 +1,5 @@
 .about-page__background {
-    background-image: url("../../assets/img/aboutUsBg.webp");
+    background-image: url("../../assets/img/About/AboutUsBg.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full viewport height */
@@ -21,6 +21,7 @@
   }
   
   .about-page__content {
+    width: 70%;
     text-align: center;
     color: white;
     position: relative;

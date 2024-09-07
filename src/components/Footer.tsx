@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const companyLinks = [
-    { label: "About Us", icon: FaRegArrowAltCircleRight, Link: "about" },
+    // { label: "About Us", icon: FaRegArrowAltCircleRight, Link: "about" },
     { label: "Contact Us", icon: FaRegArrowAltCircleRight, Link: "contact-us" },
     {
       label: "Delivery | Shipping Policy",
