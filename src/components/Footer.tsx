@@ -135,7 +135,7 @@ const Footer = () => {
           <div className="copyright pt-4 mb-2">
             <div className="is-flex is-space-between">
               <div className="text-center text-md-start mb-md-0">
-                {`© ${new Date().getFullYear()} Pillswift Holdings | All rights Reserved | Privacy Policy`}
+                {`© ${new Date().getFullYear()} Pillswift Holdings | All rights Reserved | Privacy Policy | GSTIN: 23ABFFP1656B1ZO | DL NO: 21/3129/57/2024, 20B/3130/57/2024`}
               </div>
               <div className="text-center text-md-end">
                 <div className="footer-menu">

@@ -139,7 +139,7 @@ const Home: FunctionComponent = () => {
           </div>
         </div>
       </section>
-      <section className="container dashboard-content">
+      {/* <section className="container dashboard-content">
         <div className="columns">
           <div className="column">
             <p className="title">Our Investments</p>
@@ -148,7 +148,7 @@ const Home: FunctionComponent = () => {
         <div className="columns">
           <ImageCardList cards={imageCards.slice(0, 5)} />
         </div>
-      </section>
+      </section> */}
       {/* <section className="container dashboard-content" style={{display:'flex', flexDirection:'column', width:'28%'}}>
         <div className="columns">
           <div className="column">
