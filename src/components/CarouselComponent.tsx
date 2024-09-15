@@ -95,10 +95,10 @@ const Item: React.FC<ItemProps> = ({ item }) => {
           bottom: "20%",
         }}
       >
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h2" gutterBottom>
           {item.heading}
         </Typography>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h5" gutterBottom>
           {item.subheading}
         </Typography>
         <Typography variant="body1" gutterBottom>

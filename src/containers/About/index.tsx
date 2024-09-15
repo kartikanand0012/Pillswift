@@ -11,45 +11,21 @@ import "./About.css";
 import OurPeople from "./OurPeople";
 import CardGroup from "./CardGroup";
 import OurClients from "./OurClients";
+import NewsletterSubscription from "../../components/NewsLetterSubscription";
 
 const About: FunctionComponent = () => {
-  const [email, setEmail] = useState<string>("");
-  const [error, setError] = useState<boolean>(false);
-  const [errorData, setErrorData] = useState({ email: "" });
+  const sheetUrl =
+    "https://script.google.com/macros/s/AKfycbzxVQSYd83VSyfkoXqHeaGaNSLkbAIjYSAbg__ZoHw0YfyGsA9MCykUMGrP6_8cJCmH/exec";
 
-  const handleChange = (value: any) => {
-    setEmail(value);
-    setError(false);
-    setErrorData({
-      email: "",
-    });
-  };
-
-  const handleSubmit = () => {
-    const isError =
-      !/^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$/.test(
-        email
-      );
-    setError(isError);
-
-    if (!isError) {
-      console.log(email);
-      setErrorData({
-        email: "",
-      });
-    }
-    if (isError) {
-      setErrorData({
-        email: "Please enter a valid Email.",
-      });
-    }
-  };
   return (
     <div className="about-page">
       <MetaInfo {...getRouteMetaInfo("About")} />
       <div className="about-page__background">
         <div className="about-page__content">
-          <h1 className="about-page__title">Improving Healthcare Decisions - Leveraging data and technology for improved quality of life</h1>
+          <h1 className="about-page__title">
+            Improving Healthcare Decisions - Leveraging data and technology for
+            improved quality of life
+          </h1>
           <p className="about-page__subtitle">
             Building World-class organizations for the future.
           </p>
@@ -110,28 +86,7 @@ const About: FunctionComponent = () => {
       <section className="dashboard-container-bottom">
         <section className="container">
           <div className="column is-flex is-space-between">
-            <div>
-              <p className="title" style={{ color: "white" }}>
-                Stay up to Date
-              </p>
-            </div>
-            <div>
-              <input
-                className={error ? "error" : ""}
-                type="text"
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => handleChange(e?.target?.value)}
-              />
-              <button onClick={handleSubmit}>Subscribe</button>
-              {/* {errorData?.email && (
-                <>
-                  <p className="content" style={{ color: "white" }}>
-                    {errorData?.email}
-                  </p>
-                </>
-              )} */}
-            </div>
+            <NewsletterSubscription sheetUrl={sheetUrl} />
           </div>
         </section>
       </section>

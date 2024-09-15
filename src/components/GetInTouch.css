@@ -122,12 +122,12 @@
   
   .get-in-touch .map-card {
     background-color: #e0e0e0;
-    padding: 20px;
+    
     border-radius: 8px;
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   
@@ -140,5 +140,33 @@
   .get-in-touch .map-card p {
     font-weight: bold;
     font-size: 18px;
+  }
+  
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 1000;
+  }
+  
+  .loader-image {
+    width: 100px; /* Adjust the size as needed */
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   

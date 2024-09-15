@@ -15,41 +15,12 @@ import banner3 from "../../assets/img/Home/banner3.jpg";
 import ImageCardList from "./ImageCardList";
 import { imageCards, LOREM_IPSUM_TEXT } from "./utils";
 import CarouselComponent from "../../components/CarouselComponent";
+import NewsletterSubscription from "../../components/NewsLetterSubscription";
 
 const Home: FunctionComponent = () => {
-  const [email, setEmail] = useState<string>("");
-  const [error, setError] = useState<boolean>(false);
-  const [errorData, setErrorData] = useState({ email: "" });
+  const sheetUrl =
+    "https://script.google.com/macros/s/AKfycbzxVQSYd83VSyfkoXqHeaGaNSLkbAIjYSAbg__ZoHw0YfyGsA9MCykUMGrP6_8cJCmH/exec";
 
-  const handleChange = (value: any) => {
-    setEmail(value);
-    setError(false);
-    setErrorData({
-      email: "",
-    });
-  };
-
-  const handleSubmit = () => {
-    const isError =
-      !/^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$/.test(
-        email
-      );
-    setError(isError);
-
-    if (!isError) {
-      console.log(email);
-      setErrorData({
-        email: "",
-      });
-    }
-    if (isError) {
-      setErrorData({
-        email: "Please enter a valid Email.",
-      });
-    }
-  };
-
-  console.log("ERROR", error);
   const items = [
     {
       image: banner1,
@@ -118,15 +89,15 @@ const Home: FunctionComponent = () => {
                   OUR VISION & MISSION
                 </p>
                 <p style={{ textAlign: "left" }}>
-                  Vision: "To reshape people’s lives by improving their
-                  healthcare decisions through data and technology."
+                  Vision: To reshape people’s lives by improving their
+                  healthcare decisions through data and technology.
                 </p>
                 <br />
                 <p style={{ textAlign: "left" }}>
-                  Mission: "To empower individuals and business owners with
+                  Mission: To empower individuals and business owners with
                   data-driven insights and cutting-edge technology, enabling
                   informed healthcare decisions and improving overall
-                  well-being."
+                  well-being.
                 </p>
                 {/* <button
                   className="action-button"
@@ -166,25 +137,13 @@ const Home: FunctionComponent = () => {
         <hr />
       </section> */}
       <section className="dashboard-container-bottom">
+      <section className="dashboard-container-bottom">
         <section className="container">
           <div className="column is-flex is-space-between">
-            <div>
-              <p className="title" style={{ color: "white" }}>
-                Stay up to Date
-              </p>
-            </div>
-            <div>
-              <input
-                className={error ? "error" : ""}
-                type="text"
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => handleChange(e?.target?.value)}
-              />
-              <button onClick={handleSubmit}>Subscribe</button>
-            </div>
+            <NewsletterSubscription sheetUrl={sheetUrl} />
           </div>
         </section>
+      </section>
       </section>
     </div>
   );

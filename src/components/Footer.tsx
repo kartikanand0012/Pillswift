@@ -74,14 +74,15 @@ const Footer = () => {
           <div className="is-flex is-space-between">
             <div className="is-flex">
               <div className="column mr-5">
-                <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                <h4 className="section-title ff-secondary text-start text-primary fw-medium mb-4">
                   Company
                 </h4>
                 {companyLinks.map((link, index) => (
                   <Link
                     key={index}
-                    className="btn btn-link is-flex is-start"
+                    className="is-flex is-start section-title ff-secondary text-start text-primary fw-normal"
                     to={`/${link.Link}`} // Adjusting this for proper routing
+                    style={{color:"#4A4A4A"}}
                   >
                     {React.createElement(link.icon, { className: "mr-2" })}
                     {link.label}
@@ -89,7 +90,7 @@ const Footer = () => {
                 ))}
               </div>
               <div className="column mr-5">
-                <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                <h4 className="section-title ff-secondary text-start text-primary fw-medium mb-4">
                   Contact Us
                 </h4>
                 {contactInfo.map((info, index) => (
@@ -98,7 +99,7 @@ const Footer = () => {
                     {info.text}
                   </p>
                 ))}
-                <div className="is-flex pt-2">
+                {/* <div className="is-flex pt-2">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
@@ -112,10 +113,10 @@ const Footer = () => {
                       })}
                     </a>
                   ))}
-                </div>
+                </div> */}
               </div>
               <div className="column mr-5">
-                <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                <h4 className="section-title ff-secondary text-start text-primary fw-medium mb-4">
                   Opening
                 </h4>
                 {openingHours.map((hours, index) => (
@@ -135,7 +136,7 @@ const Footer = () => {
           <div className="copyright pt-4 mb-2">
             <div className="is-flex is-space-between">
               <div className="text-center text-md-start mb-md-0">
-                {`© ${new Date().getFullYear()} Pillswift Holdings | All rights Reserved | Privacy Policy | GSTIN: 23ABFFP1656B1ZO | DL NO: 21/3129/57/2024, 20B/3130/57/2024`}
+                {`© ${new Date().getFullYear()} Pillswift LLP | All rights Reserved | GSTIN: 23ABFFP1656B1ZO | DL NO: 21/3129/57/2024, 20B/3130/57/2024`}
               </div>
               <div className="text-center text-md-end">
                 <div className="footer-menu">
