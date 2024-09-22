@@ -179,7 +179,7 @@ const GetInTouch = () => {
             <div className="map-card">
               <p>Our Office Location</p>
               <img onClick={handleClick} src={location} alt="World Map" />
-              <div className="qr-code">
+              {/* <div className="qr-code">
                 <h3>Scan to Chat on WhatsApp</h3>
                 <div className="is-flex">
                   <img
@@ -201,7 +201,7 @@ const GetInTouch = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
